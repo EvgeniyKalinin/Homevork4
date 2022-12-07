@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Введите число.");
+﻿try
+{
+Console.WriteLine("Введите число.");
 int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите степерь");
 int num2 = Convert.ToInt32(Console.ReadLine());
@@ -14,3 +16,8 @@ int Step(int num, int st)
 Console.WriteLine();
 int res = Step(num1, num2);
 Console.WriteLine($"Число {num1} в степени {num2} равно {res}.");
+}
+catch
+{
+    Console.WriteLine("Ошибка ввода! Введите целое число.");
+}
