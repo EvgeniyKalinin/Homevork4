@@ -1,4 +1,6 @@
-﻿int[] mass = new int[8];
+﻿try
+{
+int[] mass = new int[8];
 for (int i = 0; i < mass.Length; i++)
 {
     Console.WriteLine($"Введите элемент массива под номером {i}.");
@@ -9,4 +11,9 @@ Console.Write("Введеный массив: ");
 for (int j = 0; j < mass.Length; j++)
 {
     Console.Write($"{mass[j]} ");
+}
+}
+catch
+{
+    Console.WriteLine("Ошибка ввода! Введите целое число.");
 }
