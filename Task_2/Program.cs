@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Введите число.");
+﻿try
+{
+Console.WriteLine("Введите число.");
 int num = Convert.ToInt32(Console.ReadLine());
 int CountNumber(int num)
 {
@@ -15,3 +17,8 @@ int CountNumber(int num)
 
 int res = CountNumber(num);
 Console.WriteLine($"Сумма цифр в числе {num} равна {res}.");
+}
+catch
+{
+    Console.WriteLine("Ошибка ввода! Введите целое число.");
+}
